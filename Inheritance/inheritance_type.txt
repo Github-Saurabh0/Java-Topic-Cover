@@ -1,0 +1,90 @@
+ Inheritance 3 type ke hote hai 
+
+ 1. Single
+     
+
+class A
+{
+
+}
+
+class B extends A
+
+{
+
+}
+
+Diagram: 
+
+  *
+  |
+  |
+  |
+  *
+
+
+
+  2. Multilevel
+
+class A
+{
+
+}
+
+class B extends A
+{
+
+}
+
+class C extends B
+{
+
+}
+
+Diagram:
+
+ *
+ |
+ |
+ |
+ *
+ |
+ |
+ |
+ *
+
+
+3. Hierarchical
+
+
+
+class Samsung
+{
+
+}
+
+class Vivo extends Samsung
+{
+
+}
+
+class Oppo extends Samsung
+{
+
+}
+
+Diagram:
+
+      *
+      |
+      |
+  ----------
+ |          |
+ *          *
+
+
+
+
+
+
+
