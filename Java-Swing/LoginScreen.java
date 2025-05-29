@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.Color;
+
 class LoginScreen extends JFrame
 {
 JLabel l1,l2,l3,l4;
@@ -64,10 +66,12 @@ String s2 = t2.getText();
 if(s1.equals("Saurabhh") && s2.equals("Java"))
 {
 	l4.setText("Login Successfull..");
+	l4.setForeground(Color.BLUE); // ✅ Set blue color
 }		
 else
 {
 	l4.setText("Login UnSuccessfull..");
+	l4.setForeground(Color.RED); // ✅ Set red Color
 }
 }
 }
@@ -78,6 +82,8 @@ public void actionPerformed(ActionEvent e1)
 {
 t1.setText("");
 t2.setText("");
+l4.setText("Cleared..");
+l4.setForeground(Color.GREEN); // ✅ Set green color
 }
 }
 
