@@ -41,7 +41,9 @@ t1.setBounds(350, 200, 100, 30);
 t2.setBounds(350, 350, 100, 30);
 b1.setBounds(200, 450, 100, 30);
 b2.setBounds(400, 450, 100, 30);
-b1.addActionListener(new Log());
+b1.addActionListener(new LoginButton());
+b2.addActionListener(new ClearButton());
+
 }
 
 public static void main(String [] args)
@@ -53,7 +55,7 @@ s1.setSize(700,700);
 s1.setComponents();
 s1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 }
-class Log implements ActionListener
+class LoginButton implements ActionListener
 {
 public void actionPerformed(ActionEvent e1)	
 {
@@ -69,4 +71,14 @@ else
 }
 }
 }
+
+class ClearButton implements ActionListener
+{
+public void actionPerformed(ActionEvent e1)	
+{
+t1.setText("");
+t2.setText("");
+}
+}
+
 }
