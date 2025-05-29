@@ -6,7 +6,7 @@ class LoginScreen extends JFrame
 {
 JLabel l1,l2,l3,l4;
 JTextField t1,t2;
-JButton b1,b2;
+JButton b1,b2,b3;
 
 LoginScreen(String s1)
 {
@@ -26,6 +26,7 @@ t1 = new JTextField();
 t2 = new JPasswordField();
 b1 = new JButton("Login");
 b2 = new JButton("Clear");
+b3 = new JButton("Add");
 setLayout(null);
 add(l1);
 add(l2);
@@ -35,6 +36,7 @@ add(t1);
 add(t2);
 add(b1);
 add(b2);
+add(b3);
 l1.setBounds(100, 50, 300, 30);
 l2.setBounds(100, 200, 100, 30);
 l3.setBounds(100, 350, 100, 30);
@@ -43,8 +45,10 @@ t1.setBounds(350, 200, 100, 30);
 t2.setBounds(350, 350, 100, 30);
 b1.setBounds(200, 450, 100, 30);
 b2.setBounds(400, 450, 100, 30);
+b3.setBounds(500, 450, 100, 30);
 b1.addActionListener(new LoginButton());
 b2.addActionListener(new ClearButton());
+b3.addActionListener(new Add());
 
 }
 
@@ -84,6 +88,26 @@ t1.setText("");
 t2.setText("");
 l4.setText("Cleared..");
 l4.setForeground(Color.GREEN); // ✅ Set green color
+}
+}
+
+class Add implements ActionListener
+{
+public void actionPerformed(ActionEvent e1)	
+{
+	try
+	{
+int a = Integer.parseInt(t1.getText());
+int b = Integer.parseInt(t2.getText());
+int c = a+b;
+l4.setText("Your Answer is: "+c);
+l4.setForeground(Color.GREEN); // ✅ Set green color
+	}
+	catch(Exception e2)
+	{
+		l4.setText("Please enter number only!!");
+		l4.setForeground(Color.RED);
+	}
 }
 }
 
