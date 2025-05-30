@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.Color;
 
+
 class LoginScreen extends JFrame
 {
 JLabel l1,l2,l3,l4;
 JTextField t1,t2;
-JButton b1,b2,b3;
-
+JButton b1,b2,b3,b4;
 LoginScreen(String s1)
 {
 	super(s1);
@@ -17,7 +17,6 @@ LoginScreen()
 }
 void setComponents()
 {
-	
 l1 = new JLabel("Welcome to Java Learning By Saurabhh");
 l2 = new JLabel("USERNAME");
 l3 = new JLabel("PASSWORD");
@@ -27,6 +26,7 @@ t2 = new JPasswordField();
 b1 = new JButton("Login");
 b2 = new JButton("Clear");
 b3 = new JButton("Add");
+b4 = new JButton("Autofill");
 setLayout(null);
 add(l1);
 add(l2);
@@ -37,6 +37,7 @@ add(t2);
 add(b1);
 add(b2);
 add(b3);
+add(b4);
 l1.setBounds(100, 50, 300, 30);
 l2.setBounds(100, 200, 100, 30);
 l3.setBounds(100, 350, 100, 30);
@@ -46,15 +47,14 @@ t2.setBounds(350, 350, 100, 30);
 b1.setBounds(200, 450, 100, 30);
 b2.setBounds(400, 450, 100, 30);
 b3.setBounds(500, 450, 100, 30);
+b4.setBounds(300, 450, 100, 30);
 b1.addActionListener(new LoginButton());
 b2.addActionListener(new ClearButton());
 b3.addActionListener(new Add());
-
+b4.addActionListener(new Autofill());
 }
-
 public static void main(String [] args)
 {
-
 LoginScreen s1 = new LoginScreen("Structure Way To Learn Java 9LPA JOB OFFER");
 s1.setVisible(true);
 s1.setSize(700,700);
@@ -79,7 +79,6 @@ else
 }
 }
 }
-
 class ClearButton implements ActionListener
 {
 public void actionPerformed(ActionEvent e1)	
@@ -90,7 +89,6 @@ l4.setText("Cleared..");
 l4.setForeground(Color.GREEN); // ✅ Set green color
 }
 }
-
 class Add implements ActionListener
 {
 public void actionPerformed(ActionEvent e1)	
@@ -110,5 +108,14 @@ l4.setForeground(Color.GREEN); // ✅ Set green color
 	}
 }
 }
+class Autofill implements ActionListener
+{
+public void actionPerformed(ActionEvent e1)	
+{
+t1.setText("Saurabhh");
+t2.setText("Java");
+}
+}
+
 
 }
