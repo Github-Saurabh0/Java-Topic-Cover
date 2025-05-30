@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.Color;
+import java.awt.Cursor;
 
 
 class LoginScreen extends JFrame
@@ -17,6 +18,8 @@ LoginScreen()
 }
 void setComponents()
 {
+	
+	Cursor c1 = new Cursor(Cursor.HAND_CURSOR);
 l1 = new JLabel("Welcome to Java Learning By Saurabhh");
 l2 = new JLabel("USERNAME");
 l3 = new JLabel("PASSWORD");
@@ -24,6 +27,8 @@ l4 = new JLabel();
 t1 = new JTextField();
 t2 = new JPasswordField();
 b1 = new JButton("Login");
+b1.setCursor(c1);
+
 b2 = new JButton("Clear");
 b3 = new JButton("Add");
 b4 = new JButton("Autofill");
