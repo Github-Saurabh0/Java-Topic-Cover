@@ -55,8 +55,9 @@ Suggestions and contributions are welcome! Feel free to fork this repo and add i
 
 ## 📧 Contact
 
-Developed by [Saurabh Kushwaha](mailto:developer.contact.saurabh@gmail.com)  
+Developed by [Saurabh Kushwaha](mailto:Saurabh@wearl.co.in)  
 🔗 Portfolio/Company: [wearl.co.in](https://wearl.co.in)  
+🔗 LinkedIn: [LinkedIn](https://www.linkedin.com/in/saurabh884095/)  
 📷 Instagram: [@dev.wearl](https://instagram.com/dev.wearl)
 
 ---
