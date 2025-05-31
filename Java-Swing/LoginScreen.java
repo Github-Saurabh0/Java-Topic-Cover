@@ -74,12 +74,13 @@ String s1 = t1.getText();
 String s2 = t2.getText();
 if(s1.equals("Saurabhh") && s2.equals("Java"))
 {
-	JOptionPane.showMessageDialog(null,"Login Successfull");
+	JOptionPane.showMessageDialog(null,"Login Successfull","Login Success",JOptionPane.OK_CANCEL_OPTION);
 	l4.setText("Login Successfull..");
 	l4.setForeground(Color.BLUE); // ✅ Set blue color
 }		
 else
 {
+	JOptionPane.showMessageDialog(null,"Login UnSuccessfull","Error",JOptionPane.ERROR_MESSAGE);
 	l4.setText("Login UnSuccessfull..");
 	l4.setForeground(Color.RED); // ✅ Set red Color
 }
@@ -91,6 +92,7 @@ public void actionPerformed(ActionEvent e1)
 {
 t1.setText("");
 t2.setText("");
+JOptionPane.showMessageDialog(null,"Cleared");
 l4.setText("Cleared..");
 l4.setForeground(Color.GREEN); // ✅ Set green color
 }
@@ -109,6 +111,7 @@ l4.setForeground(Color.GREEN); // ✅ Set green color
 	}
 	catch(Exception e2)
 	{
+		JOptionPane.showMessageDialog(null,"Please enter number only!");
 		l4.setText("Please enter number only!!");
 		l4.setForeground(Color.RED);
 	}
