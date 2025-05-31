@@ -74,6 +74,7 @@ String s1 = t1.getText();
 String s2 = t2.getText();
 if(s1.equals("Saurabhh") && s2.equals("Java"))
 {
+	JOptionPane.showMessageDialog(null,"Login Successfull");
 	l4.setText("Login Successfull..");
 	l4.setForeground(Color.BLUE); // ✅ Set blue color
 }		
