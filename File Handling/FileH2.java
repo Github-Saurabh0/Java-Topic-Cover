@@ -11,7 +11,7 @@ System.out.println("File Created Successfully "+f1);
 
 String s1 = " Saurabhh By Java";
 FileOutputStream fout = new FileOutputStream("ChottuH2.txt", true);
-
+//add boolean value to store preview data
 
 char c1[] = s1.toCharArray();
 int i;
