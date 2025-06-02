@@ -9,8 +9,8 @@ File f1 = new File("ChottuH2.txt");
 f1.createNewFile();
 System.out.println("File Created "+f1);
 
-String s1 = "Saurabhh By Java";
-FileOutputStream fout = new FileOutputStream("ChottuH2.txt");
+String s1 = " Saurabhh By Java";
+FileOutputStream fout = new FileOutputStream("ChottuH2.txt", true);
 
 
 char c1[] = s1.toCharArray();
