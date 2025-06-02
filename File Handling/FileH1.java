@@ -11,11 +11,12 @@ System.out.println(f1.exists());
 System.out.println(f1.canWrite());
 System.out.println(f1.length());
 
-// f1.createNewFile();
+f1.createNewFile();
+System.out.println("File Created "+f1);
 
-// System.out.println(f1.exists());
-// System.out.println(f1.canWrite());
-// System.out.println(f1.length());
+System.out.println(f1.exists());
+System.out.println(f1.canWrite());
+System.out.println(f1.length());
 
 }
 
