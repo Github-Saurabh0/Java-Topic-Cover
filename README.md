@@ -13,10 +13,12 @@ This repository contains topic-wise Java examples organized into folders:
 - ✅ Exception Handling in Java
 - ✅ Inheritance
 - ✅ Java Swing (GUI Applications)
-- ✅ Multithreading (Runnable, Interface, Thread Class)
+- ✅ Multithreading (Runnable Interface, Thread Class)
 - ✅ Packages
 - ✅ This Keyword
 - ✅ Abstract Class and Interface
+- ✅ Collection Framework
+- ✅ File Handling
 
 Each folder contains multiple examples with clean, commented code for better understanding.
 
