@@ -13,5 +13,13 @@ System.out.println(l1.get(1));
 System.out.println("First Element of LinkedList: " +l1.getFirst());
 System.out.println("Last Element of LinkedList: "+ l1.getLast());
 
+Stack s1 = new Stack();
+s1.push(10);
+s1.push(20);
+s1.push(30);
+s1.push(40);
+s1.push(50);
+System.out.println(s1.search(30));
+
 }
 }
